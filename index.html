@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- importação bootstrap/jquery -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body class="bg-dark text-center text-white ">
+        <header class="bg-primary">
+            <h1>Cadastro</h1>
+        </header>
+        
+        <main class="container">
+            <form class="row text-left" action="index.php" method="GET">
+                <div class="col-md-4" >
+                    <label for="nome" >Nome</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="seu nome completo" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite seu nome.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="CPF">CPF</label><br>
+                    <input type="text" id="cpf" name="cpf" maxlength="14" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="xxx.xxx.xxx-xx" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite seu CPF.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="nasc" >Data de Nascimento</label><br>
+                    <input type="date" id="nasc" name="nasc" required><br>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite sua Data De Nascimento.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="cep" >CEP</label><br>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite seu CEP.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="cidade">Cidade</label><br>
+                    <input type="text" id="cidade" name="cidade" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite sua Cidade.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="email" >E-mail</label><br>
+                    <input type="text" id="email" name="email" placeholder="email@exemplo.com" pattern=".{4,}@.{5,}" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite seu E-mail.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="usuario">Usuário</label><br>
+                    <input type="text" id="usuario" name="usuario" placeholder="digite o nome de usuário" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite seu Usuário.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <label for="senha">Senha</label><br>
+                    <input type="password" id="senha" name="senha" placeholder="digite sua senha" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite sua Senha.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="csenha">Confirme a Senha</label><br>
+                    <input type="password" id="csenha" name="csenha" placeholder="confirme sua senha" required>
+                    <div class="valid-feedback">
+                        Tudo Certo!
+                    </div>
+                    <div class="invalid-feedback">
+                        Confirme sua Senha.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" value="Cadastar" class="btn-success">
+                <input type="reset" value="Cancelar" class="btn-warning">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
